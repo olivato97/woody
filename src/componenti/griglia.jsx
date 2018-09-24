@@ -1,14 +1,14 @@
 import React from 'react'
-import { Grid, Image } from 'semantic-ui-react'
+import { Grid, Image, Button } from 'semantic-ui-react'
 import img from '../immagini/maglietta.png'
-import link from '.'
+import link from './prodotto'
 
 const Griglia = () => (
     <Grid celled>
     <Grid.Row>
       <Grid.Column width={13}>
       <h2>maglietta super figa</h2>
-      <Image src={img} link=""/>
+      <Button><Image src={img} onClick={link} /></Button>
         <p>"descrizzione super accattivante"</p>
       </Grid.Column>
       <Grid.Column width={13}>
